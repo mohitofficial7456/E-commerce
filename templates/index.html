@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+Home
+{% endblock title %}
+{% block content %}
+<div class="hero-bg">
+    <img src="{% static 'assets/img/hero-bg-light.webp' %}" alt="" />
+</div>
+<div class="container text-center">
+    <div class="d-flex flex-column justify-content-center align-items-center">
+        <h1 data-aos="fade-up">Welcome to <span>Shop Cart</span></h1>
+        <p data-aos="fade-up" data-aos-delay="100">
+            Please give us a chance to give you the best Shopping
+            experience<br />
+        </p>
+        <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+            <a href="/" class="btn-get-started">Shop Now</a>
+        </div>
+            {% comment %} <img
+                src="{% static 'assets/img/hero-services-img.webp' %}"
+                class="img-fluid hero-img"
+                alt=""
+                data-aos="zoom-out"
+                data-aos-delay="100" /> {% endcomment %}
+    </div>
+</div>
+{% endblock content %}
+{% block body %}
+{% endblock body %}
